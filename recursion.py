@@ -22,7 +22,13 @@ print(gcd(num1,num2))
 s1 = input("Enter First String: ")
 s2 = input("Enter Second String: ")
 
-def compareTo(s1, s2):
+def compareTo(s1, s2): #
+    # https://www.geeksforgeeks.org/string-comparison-in-python/
+    #https://careerkarma.com/blog/python-compare-strings/ : great for understanding which symbols would ensure that;
+    # a negative number if s1 < s2,
+    # if s1 == s2, and
+    # a positive number if s1 > s2
+
     if len(s1) == 1 and len(s2) == 1:
         if (s1[0] == s2[0]):
             return True
