@@ -1,17 +1,16 @@
-nth = int(input("Enter nth number of fibonacci sequence that you want to see: "))
-def fibonacci(n):
-   if n <= 1:
+nth = int(input("Enter nth number of potential fibonacci sequence: "))
+def fibonacci(n):  #https://realpython.com/fibonacci-sequence-python/
+   if n <= 1: 
        return n
    else:
        return(fibonacci(n-1) + fibonacci(n-2))
 print(fibonacci(nth))
 
 
-# Q2:-
-num1 = int(input("Enter the first number you want to find the GCD of: "))
-num2 = int(input("Enter the second number you want to find the GCD of: "))
+num1 = int(input("Enter the first number to find the GCD of: "))
+num2 = int(input("Enter the second number to find the GCD of: "))
 
-def gcd(a , b):
+def gcd(a , b): #https://www.geeksforgeeks.org/gcd-in-python/
     if b == 0:
         return a
     else:
